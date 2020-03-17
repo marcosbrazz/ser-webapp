@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { GridModule } from 'carbon-components-angular';
+import { GridModule, UIShellModule } from 'carbon-components-angular';
 
 
 @NgModule({
@@ -12,7 +12,8 @@ import { GridModule } from 'carbon-components-angular';
   ],
   imports: [
     CommonModule,
-    GridModule
+    GridModule,
+    UIShellModule
   ],
   exports: [
     HeaderComponent,

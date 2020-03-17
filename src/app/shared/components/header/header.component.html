@@ -1,1 +1,8 @@
-<p>header works!</p>
+<ibm-header [brand]="brandTemplate"></ibm-header>
+<ng-template #brandTemplate>
+    <a class="bx--header__name">
+        <img [src]="logoSrc">
+        <span class="bx--header__name--prefix">IBM &nbsp;</span>
+        Smart Expense Report
+    </a>
+</ng-template>
