@@ -1,1 +1,35 @@
-<p>confirm works!</p>
+    <main>
+        <div ibmGrid>
+            <div ibmRow class="row">
+                <div ibmCol>
+                    <h2>Transaction Uber</h2>
+                </div>
+            </div>
+            <div ibmRow class="row">
+                <div ibmCol>
+                    <label>Expense Type</label>
+                    <h4>Transport</h4>
+                </div>
+            </div>
+            <div ibmRow class="row">
+                <div ibmCol>
+                    <label>Date</label>
+                    <p>10, January 2020</p>
+                </div>
+            </div>
+            <div ibmRow class="row">
+                <div ibmCol>
+                    <label>Amount</label>
+                    <p>US$ 20.00</p>
+                </div>
+            </div>
+            <div ibmRow class="row">
+                <div ibmCol>
+                    <button [ibmButton]="'secondary'" [size]="'normal'">Check</button>
+                </div>
+                <div ibmCol class="button-ok">
+                    <button [ibmButton]="'primary'" [size]="'normal'">OK</button>
+                </div>
+            </div>
+        </div>
+    </main>
