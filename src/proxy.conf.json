@@ -1,0 +1,6 @@
+{
+    "/api/expense": {
+        "target": "http://localhost:8888",
+        "secure": false
+    }
+}
