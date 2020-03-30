@@ -1,6 +1,4 @@
 applications:
 - name: ser-web-app
-  path : "dist/web-app"
   memory: 256M
-  buildpack :
-  - "https://github.com/cloudfoundry/staticfile-buildpack.git"
+ 

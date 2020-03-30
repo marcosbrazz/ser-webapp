@@ -1,6 +1,6 @@
 {
     "/api/expense": {
-        "target": "http://localhost:8888",
+        "target": "https://ser-api-mock.us-south.cf.appdomain.cloud",
         "secure": false
     }
 }
