@@ -1,6 +1,6 @@
 const request = require('request-promise-native');
 
-const expensePath = `${process.env.EXP_API_URL}/api/expense`;
+const expensePath = `${process.env.EXP_API_URL}/v1/expense`;
 
 module.exports = async (req, res) => {
     const opt = {
@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
     };
     try {
         expenses = await request.get(opt);
-        res.send(expenses)
+        res.json(expenses['expenses'])
     } catch(e) {
         res.status(e.statusCode).send(e);
     }
